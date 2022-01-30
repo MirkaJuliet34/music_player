@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;;
+
+}
+html {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url(images/fundo.jpg);
+  color: rgb(122, 71, 71);
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60vh;
+  background-color: floralwhite;
+  color: #ddd;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 15px;
+}
+.container{
+  position: relative;
+  height: 520px;
+  width: 300px;
+  background-color: floralwhite;
+  border-radius: 30px;
+  box-shadow: 5px 5px 50px whitesmoke;
+  color: #203250;
+  margin-bottom: -3rem;
+}
+.container #like{
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  right: 20px;
+  top: 20px;
+  border: none;
+  outline: none;
+  line-height: 35px;
+  
+  border-radius: 10px;
+  font-size: 18px;
+  background-color:#0000cd;
+  cursor: pointer;
+}
+
+.head{
+  margin: 10px 0;
+  text-align: center;
+}
+.head #down{
+  border: none;
+  outline: none;
+  background: transparent;
+  margin-bottom: 15px;
+}
+.songimage{
+  position: relative;
+  margin: 20px auto;
+  display: block;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 32px rgba(0, 0, 0, 0.3);
+}
+.songimage::after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 40%;
+  width: 40%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.80);
+  backdrop-filter: blur(20.0px);
+  -webkit-backdrop-filter: blur(20.0px);
+  z-index: 12;
+}
+
+img {
+  position: static;
+  width: 92px;
+  height: 92px;
+  border-radius: 4px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  border-bottom: 40%;
+  display: block;
+  margin-left: 4%;
+  margin-bottom: 6%;
+
+}
+.descricao {
+  width: 300px;
+  margin-left: 35%;
+  position: relative;
+  top: 60px; left: 10px;
+  text-align: justify;
+ 
+}
+h2 {
+  position: static;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: #000000;
+ 
+}
+i{
+  position: static;
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 15px;
+/* identical to box height */
+  color: rgba(0, 0, 0, 0.45);
+/* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+}
+p{
+  position: static;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.65);
+  /* Inside auto layout */
+  margin: 4px 8px;
+  text-align: center;
+
+}
+.duracao {
+  width: 300px;
+
+}
+.list1{
+  scroll-padding-bottom: 40%;
+  line-height: 5px;
+ 
+}
+
+.barra {
+  width: 300px;
+  height: 4px;
+  border: 1px solid #9ce3ff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 10%;
+  background: linear-gradient(#030175 0%, #0040ff 90%);
+
+}
+
+progress {
+  height: 6px;
+  width: 0%;
+  background: linear-gradient(#030175 0%, #0040ff 90%);
+}
+
+.ponto {
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(#030175 0%, #0040ff 90%);
+  border-radius: 20%;
+  margin-left: -1px;
+}
+
+.tempo {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}
+
+.player {
+  width: 300px;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15%;
+  position: relative;
+  padding-bottom: 2%;
+  background-color: floralwhite;
+  border-radius: 9px;
+  box-shadow: 5px 5px 50px rgb(255, 255, 255);
+  color: #ffffff;
+ }
+
+.botao-play, .botao-pause {
+  font-size: 30px;
+  cursor: pointer;
+  color: #0000cd;
+  background-color: floralwhite;
+  
+}
+
+.setas {
+  font-size: 30px;
+  cursor: pointer;
+  color: #0000cd;
+  background-color: floralwhite;
+ 
+}
+
+.botao-pause {
+  display: none;
+  color: #0000cd;
+  background-color: floralwhite;
+}
+.random{
+  font-size: 20px;
+  cursor: pointer;
+  color: #0000cd;
+  background-color: floralwhite;
+}
+.repeat{
+  font-size: 20px;
+  cursor: pointer;
+  color: #0000cd;
+  background-color: floralwhite;
+}
